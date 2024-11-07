@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Get In Touch</h2>
           <p className="leading-relaxed mb-5 text-gray-600">
-            Have questions, feedback, or want to collaborate? Drop a message below!
+            Have questions, feedback, or want to collaborate&#63; Drop a message below&#33;
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
@@ -61,7 +61,7 @@ const Contact = () => {
             Send Message
           </button>
           <p className="text-xs text-gray-500 mt-3">
-            Your privacy is important to us. We won't share your details with anyone.
+            Your privacy is important to us. We won&#39;t share your details with anyone.
           </p>
         </div>
       </div>
