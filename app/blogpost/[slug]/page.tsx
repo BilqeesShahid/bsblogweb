@@ -48,12 +48,12 @@ const {data, content} = matter(fileContent)
 const htmlContent = (await processor.process(content)).toString()
   return (
    <MaxWidthWrapper className='prose dark:prose-invert'> 
-   <div className='flex '> 
-    <div className='px-16'> 
-        <h1>{data.title}</h1>
+   <div className='flex flex-col lg:flex-row'> 
+    <div className='w-full lg:w-3/4 px-4 lg:px-16'> 
+        <h1 className="text-2xl md:text-3xl">{data.title}</h1>
         <div dangerouslySetInnerHTML={{__html: htmlContent}}></div> 
     </div>
-        <Onthispage className="text-sm w-[50%]" htmlContent={htmlContent}/>
+        <Onthispage className="hidden lg:block lg:text-sm w-full lg:w-1/4 lg:px-4" htmlContent={htmlContent}/>
    </div>
  
    </MaxWidthWrapper>
