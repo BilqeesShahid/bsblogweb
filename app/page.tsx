@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { useEffect, useRef } from "react";
 import Typed from 'typed.js';
 
