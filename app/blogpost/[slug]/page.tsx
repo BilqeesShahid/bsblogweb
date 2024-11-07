@@ -16,7 +16,7 @@ import { Metadata, ResolvingMetadata } from 'next'
  
 type Props = {
   params: { slug: string, title: string, description: string }
-  searchParams: { [key: string]: string | string[] | undefined }
+  
 }
 
 // https://ondrejsevcik.com/blog/building-perfect-markdown-processor-for-my-blog
@@ -62,16 +62,14 @@ const htmlContent = (await processor.process(content)).toString()
 
 
 export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
+  { params }: Props
 ): Promise<Metadata> {
-  // read route params 
   const filePath = `content/${params.slug}.md`
   const fileContent = fs.readFileSync(filePath, "utf-8");
-  const {data} = matter(fileContent)
+  const { data } = matter(fileContent)
   return {
     title: `${data.title} - ProgrammingWithBilqeesShahid`, 
     description: data.description
   }
-
 }
+
