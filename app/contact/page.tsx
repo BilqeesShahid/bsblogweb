@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button';
 import React from 'react';
 
 const Contact = () => {
@@ -21,7 +20,7 @@ const Contact = () => {
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-              <a className="text-gray-500 leading-relaxed">coder@gmail.com</a>
+              <a className="text-gray-500 leading-relaxed">coder&#64;gmail.com</a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
               <p className="leading-relaxed text-gray-700">1234-4567890</p>
             </div>
