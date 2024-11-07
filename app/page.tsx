@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useRef } from "react";
 import Typed from 'typed.js';
+import Image from "next/image";
 
 export default function Home() {
   const el = useRef(null);
@@ -47,7 +48,7 @@ export default function Home() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
             </form></div></div> <div className="w-full mt-4 lg:mt-0 lg:w-1/2 animate-slow-up-down">
-            <img src="/hom1.png" alt="animated-illustration" className="w-full h-full max-w-md mx-auto" />
+            <Image src="/hom1.png" alt="animated-illustration" width={600} height={600} />
 </div>
       </section>
 
