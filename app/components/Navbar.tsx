@@ -1,15 +1,12 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Button, buttonVariants } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button"
 import { ModeToggle } from './theme-toggle'
-import { HamburgerMenuIcon } from '@radix-ui/react-icons'
+
 import {
     Sheet,
     SheetContent,
-    SheetDescription,
-    SheetHeader,
-    SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
 import LoadingBar from 'react-top-loading-bar'
