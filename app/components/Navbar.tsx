@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { buttonVariants } from "@/components/ui/button"
 import { ModeToggle } from './theme-toggle'
+import Image from 'next/image';
 
 import {
     Sheet,
@@ -52,7 +53,7 @@ const NavBar = () => {
             />
             <div className='text-lg font-bold md:text-xl'>
                 <Link href={"/"}>
-                <div className='flex items-center'><img src="/mylogo.png" alt="logo" width={50} height={50} />
+                <div className='flex items-center'><Image src="/mylogo.png" alt="logo" width={50} height={50} />
                     Blogs</div>
                 </Link>
             </div>
