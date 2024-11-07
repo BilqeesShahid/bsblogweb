@@ -1,4 +1,3 @@
-"use client"
 import MaxWidthWrapper from '@/app/components/MaxWidthWrapper'
 import React from 'react'
 import { unified } from "unified"
