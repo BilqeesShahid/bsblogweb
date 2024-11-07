@@ -11,7 +11,7 @@ import Onthispage from '@/app/components/Onthispage'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import { rehypePrettyCode } from 'rehype-pretty-code'
 import { transformerCopyButton } from '@rehype-pretty/transformers'
-import { Metadata, ResolvingMetadata } from 'next' 
+import { Metadata } from 'next' 
 
  
 type Props = {
